@@ -6,3 +6,6 @@ const getPixels = (rem, pixel) => {
   return result
 }
 console.log(getPixels('2rem', '20px'));
+
+//==================
+//Гуд, но можно в одну строку - const getPixels = (rem, pixel) => parseInt(pixel) * parseInt(rem);

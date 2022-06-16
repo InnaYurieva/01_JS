@@ -6,3 +6,4 @@ const getTemperature = (celsius) => {
 }
 console.log(getTemperature(2));
 //===========================================================
+//Гуд, но можно в одну строку - const getTemperature = (celsius) => parseInt(celsius) * 1.8 + 32;

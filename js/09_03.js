@@ -12,6 +12,7 @@ let count = 0
 
  } 
  console.log(countVowels('the quick brown fox'));
+
 //стащила из инэта
 /*  function findVowels(str) {
   const vowels = 'aeiouAEIOU';
@@ -19,3 +20,5 @@ let count = 0
 }
 console.log(findVowels('the quick brown fox'));  */
 //==================================================================
+
+//Супер!
