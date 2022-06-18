@@ -36,7 +36,7 @@ const findLongestWord = function(string) {
 только в том случае когда нам реально надо получить отсортированные данные.
 Решение из инета хорошее, попробуй реализовать его, только через цикл for и переменную результата.
  */
-
+/* 
 const findLongestWord = function(string) {
     let arr = string.split(' ');
     let wordLength = 0
@@ -46,10 +46,23 @@ const findLongestWord = function(string) {
             return arr[index]
         }
     } 
-  }
+  } */
 
+//РЕШЕНИЕ 2
+function findLongestWord(string) {
+  let str = string.split(" ");
+  let wordLength = 0;
+  for (let i = 0; i < str.length; i++) {
+      if (wordLength < str[i].length) {
+          wordLength = str[i].length;
+          word = str[i];
+      }
+  }
+  return word;
+}
 
 console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); // 'jumped'
 console.log(findLongestWord("Google do a roll")); // 'Google'
 console.log(findLongestWord("May the force be with you")); // 'force'
+console.log(findLongestWord("May the force be with verylonglonglongword")); // 'force', а надо verylonglonglongword
 

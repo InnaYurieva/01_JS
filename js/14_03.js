@@ -66,7 +66,7 @@ const nonUniqueElements = (numbers) => {
   for (let index = 0; index < numbers.length; index++) {
     let element = numbers[index];
     //console.log(uniqArr[element]);
-    console.log(arr[element]);
+    //onsole.log(arr[element]);
     if(arr[element] > 1) {
       uniqArr.push(element)
     }
@@ -79,5 +79,6 @@ console.log(nonUniqueElements([1, 2, 3, 1, 3])); // [1, 3, 1, 3]
 console.log(nonUniqueElements([1, 2, 3, 4, 5])); // []
 console.log(nonUniqueElements([5, 5, 5, 5, 5])); // [5, 5, 5, 5, 5]
 console.log(nonUniqueElements([10, 9, 10, 10, 9, 8])); // [10, 9, 10, 10,9]
+console.log(nonUniqueElements([1, 2, 3, 1, 3, 66, 66, 66]))
 
 

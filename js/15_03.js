@@ -24,11 +24,22 @@ if (arr.length % 2) {
 } написано после обьявления переменных b и c, то есть если этот кейс сработает, эти переменные были созданы напрасно,
 лучше прописать этот кейс сразу после обьявления переменной a. */
 
-const median = (arr) => {
+/* const median = (arr) => {
   let a = Math.floor(arr.length / 2)
   if(arr.length % 2) {
     return arr[a] 
   }  return ((arr[arr.length / 2]) + (arr[arr.length / 2 - 1])) / 2
+} */
+
+//РЕШЕНИЕ 2
+const median = (arr) => {
+  const a = Math.floor(arr.length / 2)
+  if(arr.length % 2) {
+    return arr[a] 
+  } 
+  const b = arr[arr.length / 2]
+  const c = arr[arr.length / 2 - 1]
+  return (b + c) / 2
 }
   
 console.log(median([1, 2, 3, 4, 5]));  // 3
